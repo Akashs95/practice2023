@@ -14,7 +14,7 @@ pipeline {
          steps {
              echo 'Testing..'
              echo "${params.myParameter} is value retrieved!"
-	     echo "testline added"
+	     echo "testline addd"
 }
 }
      stage('Deploy') {
