@@ -19,7 +19,7 @@ pipeline {
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 dir("${env.WORKSPACE}/java-tomcat-sample"){
                     sh "pwd"
-                    sh 'sed -i /s/SDLC_ENV/${params.SDLC_ENV}'>'/java-tomcat-sample/src/main/java/dao/GetDao.java'
+                    //sh 'sed -i /s/SDLC_ENV/${params.SDLC_ENV}'>'/java-tomcat-sample/src/main/java/dao/GetDao.java'
                     sh 'mvn clean install -f pom.xml'
                 }
             }
