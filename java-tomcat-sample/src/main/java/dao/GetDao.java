@@ -23,7 +23,7 @@ public class GetDao
 				db_password=java ssm.getparameter('SDLC_ENV_rds_creds');
 				//Replace the code to retrieve the db_hostname, db_user, db_password from SSM Parameter Store
 				//Replace the code to retrieve the db_hostname, db_user, db_password from Secret Manager
-			Connection con = DriverManager.getConnection("db_endpoint:3306/db",db_username,db_password);
+			Connection con = DriverManager.getConnection("db_endpoint:3306/db","db_username","db_password");
 			
 			Statement st = con.createStatement();
 			// ResultSet rs = st.executeQuery("select * from employees where emp_no=" + emp_no);
