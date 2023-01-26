@@ -20,7 +20,7 @@ public class GetDao
 			// Connection con = DriverManager.getConnection("jdbc:mysql://DB_HOSTNAME_HERE:3306/db","root","DB_PASSWORD_HERE");
 			
 				db_username=("java ssm.getparameter")("SDLC_ENV")_("rds_creds");
-				db_password=("java ssm.getparameter("SDLC_ENV")_rds_creds");
+				db_password=("java ssm.getparameter")("SDLC_ENV")_("rds_creds");
 				//Replace the code to retrieve the db_hostname, db_user, db_password from SSM Parameter Store
 				//Replace the code to retrieve the db_hostname, db_user, db_password from Secret Manager
 			Connection con = DriverManager.getConnection("db_endpoint:3306/db","db_username","db_password");
